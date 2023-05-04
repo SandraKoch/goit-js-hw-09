@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-switcher-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-start,
+.data-stop {
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+.timer-start-button {
+  padding: 20px 0;
+}
+
+.timer-container {
+  height: 100%;
+}
+
+.flatpickr-input {
+  padding: 50px 0px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+.field {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 76px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+/* .value {
+}
+.label {
+} */
