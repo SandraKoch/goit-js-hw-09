@@ -31,8 +31,14 @@ a {
   margin-top: 10px;
 }
 
+.flatpickr-input[readonly] {
+  border-color: rgb(83, 165, 228);
+}
+
 .timer-start-button {
   padding: 20px 0;
+  background-color: rgb(83, 165, 228);
+  border-color: rgb(83, 165, 228);
 }
 
 .timer-container {
@@ -52,13 +58,20 @@ a {
 }
 .field {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   width: 76px;
   border: 1px solid black;
   margin-top: 10px;
 }
-/* .value {
+.value {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  border-bottom: 1px solid rgb(83, 165, 228);
+  width: 100%;
+  text-align: center;
 }
-.label {
+
+/* .label {
 } */
