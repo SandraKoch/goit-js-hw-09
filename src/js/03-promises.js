@@ -10,9 +10,9 @@ console.log(submitButtonEl);
 
 submitButtonEl.addEventListener('click', e => {
   e.preventDefault();
-  firstDelay = Number(delayInputEl.value);
-  delayStep = Number(stepInputEl.value);
-  amount = Number(amountInputEl.value);
+  let firstDelay = Number(delayInputEl.value);
+  let delayStep = Number(stepInputEl.value);
+  let amount = Number(amountInputEl.value);
 
   for (let i = 0; i < amount; i++) {
     const promise = createPromise(i + 1, firstDelay + delayStep * i);
