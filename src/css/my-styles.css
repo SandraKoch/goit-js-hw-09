@@ -9,15 +9,37 @@ ul {
   text-align: center;
 }
 
+li {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
   color: black;
+}
+
+li:hover,
+li:active,
+li:focus {
+  background-color: rgb(83, 165, 228);
+  color: white;
 }
 
 .container {
   display: flex;
   flex-direction: column;
 }
+
+p {
+  text-align: center;
+}
+
+/* color-switcher styles */
 
 .color-switcher-container {
   display: flex;
@@ -27,18 +49,35 @@ a {
 
 .data-start,
 .data-stop {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
   padding: 10px 30px;
   margin-top: 10px;
+  border-style: none;
 }
+
+.data-start:hover,
+.data-stop:hover {
+  background-color: rgb(83, 165, 228);
+  color: white;
+}
+
+/* timer styles */
 
 .flatpickr-input[readonly] {
   border-color: rgb(83, 165, 228);
+  border-radius: 10px;
 }
 
 .timer-start-button {
   padding: 20px 0;
   background-color: rgb(83, 165, 228);
   border-color: rgb(83, 165, 228);
+  border-radius: 10px;
 }
 
 .timer-container {
@@ -52,6 +91,7 @@ a {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
 .timer {
   display: flex;
   justify-content: space-between;
@@ -61,17 +101,52 @@ a {
   flex-direction: column;
   align-items: center;
   width: 76px;
-  border: 1px solid black;
+  border: 1px solid rgb(83, 165, 228);
   margin-top: 10px;
+  border-radius: 10px;
 }
 .value {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 900;
   font-size: 30px;
-  border-bottom: 1px solid rgb(83, 165, 228);
   width: 100%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.label {
+  background-color: rgb(83, 165, 228);
+  color: white;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   text-align: center;
 }
 
-/* .label {
-} */
+/* promises creator styles */
+.promises-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promises-form label {
+  margin-bottom: 10px;
+}
+
+.promises-form button {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-style: none;
+}
+
+.promises-form button:hover {
+  background-color: rgb(83, 165, 228);
+  color: white;
+}
