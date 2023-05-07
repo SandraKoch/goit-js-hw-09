@@ -8,11 +8,15 @@ const amountInputEl = document.querySelector('[name="amount"]');
 const submitButtonEl = document.querySelector('[type="submit"]');
 console.log(submitButtonEl);
 
+let firstDelay;
+let delayStep;
+let amount;
+
 submitButtonEl.addEventListener('click', e => {
   e.preventDefault();
-  let firstDelay = Number(delayInputEl.value);
-  let delayStep = Number(stepInputEl.value);
-  let amount = Number(amountInputEl.value);
+  firstDelay = Number(delayInputEl.value);
+  delayStep = Number(stepInputEl.value);
+  amount = Number(amountInputEl.value);
 
   for (let i = 0; i < amount; i++) {
     const promise = createPromise(i + 1, firstDelay + delayStep * i);
